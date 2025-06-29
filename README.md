@@ -11,7 +11,8 @@ A real-time, AI-powered dashboard for 911 and suicide hotline operators. RoboCop
 
 > **Live Demo:** _[Add link if deployed]_
 > **Screenshots:**  
-> ![Dashboard Main](./screenshot1.png)  
+> !<img width="689" alt="image" src="https://github.com/user-attachments/assets/32c8f363-ce7c-4f23-aaa9-a6f26dbfd150" />
+)  
 > ![Dispatch Modal](./screenshot2.png)
 
 ---
