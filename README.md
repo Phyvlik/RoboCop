@@ -4,7 +4,7 @@
 <img width="689" alt="image" src="https://github.com/user-attachments/assets/cf2955cd-e567-4c7c-b9e2-2ac16e7f6977" />
 
 
-A real-time, AI-powered dashboard for 911 and suicide hotline operators. RoboCop leverages Google Gemini AI to provide live crisis analysis, actionable alerts, and intelligent suggestions—helping emergency responders save lives with confidence and speed.
+RoboCop leverages Google Gemini AI to provide live crisis analysis, actionable alerts, and intelligent suggestions—helping emergency responders save lives with confidence and speed.
 
 ---
 
