@@ -1,0 +1,295 @@
+/* Emergency Response Dashboard Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+	background-color: #111827;
+	color: #ffffff;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: rgba(255, 255, 255, 0.05);
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(180deg, #dc2626 0%, #f59e0b 100%);
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: linear-gradient(180deg, #b91c1c 0%, #d97706 100%);
+}
+
+/* Emergency animations */
+@keyframes pulse {
+	0%, 100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.5;
+	}
+}
+
+@keyframes blink {
+	0%, 50% {
+		opacity: 1;
+	}
+	51%, 100% {
+		opacity: 0.3;
+	}
+}
+
+@keyframes slideIn {
+	from {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* Emergency alert animations */
+.emergency-pulse {
+	animation: pulse 2s infinite;
+}
+
+.emergency-blink {
+	animation: blink 1s infinite;
+}
+
+.slide-in {
+	animation: slideIn 0.5s ease-out;
+}
+
+.fade-in {
+	animation: fadeIn 0.3s ease-out;
+}
+
+/* Panel hover effects */
+.bg-dark {
+	transition: all 0.3s ease;
+}
+
+.bg-dark:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 8px 25px rgba(220, 38, 38, 0.15);
+}
+
+/* Button hover effects */
+button {
+	transition: all 0.2s ease;
+}
+
+button:hover {
+	transform: translateY(-1px);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Emergency color utilities */
+.text-emergency {
+	color: #dc2626;
+}
+
+.text-warning {
+	color: #f59e0b;
+}
+
+.text-success {
+	color: #059669;
+}
+
+.text-info {
+	color: #3b82f6;
+}
+
+.bg-emergency {
+	background-color: #dc2626;
+}
+
+.bg-warning {
+	background-color: #f59e0b;
+}
+
+.bg-success {
+	background-color: #059669;
+}
+
+.bg-info {
+	background-color: #3b82f6;
+}
+
+/* Transcript styling */
+#transcript-container {
+	font-family: 'Courier New', monospace;
+	line-height: 1.6;
+}
+
+#transcript-container .flex {
+	transition: background-color 0.2s ease;
+}
+
+#transcript-container .flex:hover {
+	background-color: rgba(59, 130, 246, 0.1);
+	border-radius: 4px;
+}
+
+/* Alert styling */
+.alert-emergency {
+	border-left: 4px solid #dc2626;
+	background: linear-gradient(90deg, rgba(220, 38, 38, 0.1) 0%, rgba(220, 38, 38, 0.05) 100%);
+}
+
+.alert-warning {
+	border-left: 4px solid #f59e0b;
+	background: linear-gradient(90deg, rgba(245, 158, 11, 0.1) 0%, rgba(245, 158, 11, 0.05) 100%);
+}
+
+.alert-info {
+	border-left: 4px solid #3b82f6;
+	background: linear-gradient(90deg, rgba(59, 130, 246, 0.1) 0%, rgba(59, 130, 246, 0.05) 100%);
+}
+
+/* Status indicators */
+.status-indicator {
+	position: relative;
+}
+
+.status-indicator::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: linear-gradient(45deg, transparent 30%, rgba(220, 38, 38, 0.1) 50%, transparent 70%);
+	animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(100%);
+	}
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+	.grid {
+		grid-template-columns: 1fr;
+	}
+	
+	.lg\:col-span-1 {
+		grid-column: span 1;
+	}
+}
+
+@media (max-width: 768px) {
+	.flex.space-x-6 {
+		flex-direction: column;
+		gap: 1rem;
+	}
+	
+	.text-lg {
+		font-size: 1rem;
+	}
+	
+	.p-6 {
+		padding: 1rem;
+	}
+}
+
+/* Loading states */
+.loading {
+	position: relative;
+	overflow: hidden;
+}
+
+.loading::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+	animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+	0% {
+		left: -100%;
+	}
+	100% {
+		left: 100%;
+	}
+}
+
+/* Focus states for accessibility */
+button:focus,
+input:focus,
+textarea:focus {
+	outline: 2px solid #3b82f6;
+	outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+	.bg-dark {
+		background-color: #000000;
+		border: 2px solid #ffffff;
+	}
+	
+	.text-gray-400 {
+		color: #ffffff;
+	}
+	
+	.text-gray-300 {
+		color: #ffffff;
+	}
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+	}
+	
+	.animate-pulse {
+		animation: none;
+	}
+	
+	.emergency-pulse {
+		animation: none;
+	}
+	
+	.emergency-blink {
+		animation: none;
+	}
+}
