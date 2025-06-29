@@ -11,9 +11,117 @@ tags:
 
 Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
 
-# Emergency Response AI Dashboard
+# 🚨 RoboCop: Emergency Response AI Dashboard
 
-A real-time AI-powered Operator Assistance Dashboard designed for 911 and suicide hotline emergency response operations, featuring **Google Gemini AI** integration for advanced emergency detection and operator feedback.
+![RoboCop Dashboard Screenshot](./screenshot1.png)
+
+A real-time, AI-powered dashboard for 911 and suicide hotline operators. RoboCop leverages Google Gemini AI to provide live crisis analysis, actionable alerts, and intelligent suggestions—helping emergency responders save lives with confidence and speed.
+
+---
+
+## 🖥️ Demo
+
+> **Live Demo:** _[Add link if deployed]_
+> **Screenshots:**  
+> ![Dashboard Main](./screenshot1.png)  
+> ![Dispatch Modal](./screenshot2.png)
+
+---
+
+## ✨ Features
+
+| Feature                | Description                                                                 |
+|------------------------|-----------------------------------------------------------------------------|
+| **Live Transcript**    | Real-time speech-to-text, speaker ID, and timestamp tracking                |
+| **AI Analysis**        | Google Gemini AI detects risk, emotional state, and recommends actions      |
+| **Real-Time Alerts**   | Instant detection of suicidal thoughts, overdose risk, and more             |
+| **Caller Intelligence**| Auto-fetches caller info, history, and location                             |
+| **Operator Actions**   | One-click dispatch, transfer, escalation, and note-taking                   |
+| **De-escalation Tips** | Gemini AI generates actionable, situation-specific techniques               |
+| **Simulation Mode**    | Test with realistic emergency scenarios—no real calls needed                |
+| **Responsive UI**      | Works on desktop, tablet, and mobile                                        |
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** HTML5, Tailwind CSS, JavaScript (ES6+), Font Awesome
+- **Backend:** Node.js, Express, Socket.io, Axios
+- **AI Integration:** Google Gemini API (NLP, sentiment, risk analysis)
+- **Security:** Role-based access, .env config, audit logging
+- **Other:** WebSocket real-time updates, simulation engine
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 16+
+- Google Gemini API Key (for full AI features)
+- Modern web browser
+
+### Installation
+
+```bash
+git clone https://github.com/Phyvlik/RoboCop.git
+cd RoboCop
+npm install
+cp env.example .env   # Add your Gemini API key to .env
+npm start             # Starts backend on http://localhost:3000
+```
+
+- Open `index.html` in your browser for the dashboard UI.
+- Use the simulation controls to test emergency scenarios.
+
+---
+
+## 🧠 How It Works
+
+- **Live calls or simulations** stream transcript data to the backend.
+- **Google Gemini AI** analyzes the transcript every 30 seconds, detecting risk, emotional state, and suggesting actions.
+- **Real-time alerts** and suggestions update instantly for the operator.
+- **Operator actions** (dispatch, transfer, notes) are tracked and simulated in real time.
+
+---
+
+## 📸 Screenshots
+
+![Dashboard Main](./screenshot1.png)
+![Dispatch Modal](./screenshot2.png)
+
+---
+
+## 🏆 Why RoboCop?
+
+- **Saves lives:** Surfaces critical risks and actions in real time.
+- **Reduces operator stress:** AI handles analysis, so humans can focus on empathy.
+- **Easy to use:** No training required—intuitive, modern UI.
+- **Customizable:** Add new scenarios, keywords, or AI prompts easily.
+
+---
+
+## 👥 Contributors
+
+- [Your Name or Team Name] (add more as needed)
+
+---
+
+## 📄 License
+
+MIT License
+
+---
+
+## 🙏 Acknowledgements
+
+- Built for [your hackathon name]
+- Powered by [Google Gemini AI](https://ai.google.dev/)
+- Inspired by the dedication of emergency responders worldwide
+
+---
+
+**_Built with ❤️ for those who save lives._**
 
 ## 🚨 Overview
 
