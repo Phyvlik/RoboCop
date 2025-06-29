@@ -1,7 +1,8 @@
 
 # 🚨 RoboCop: Emergency Response AI Dashboard
 
-![RoboCop Dashboard Screenshot](./screenshot1.png)
+<img width="689" alt="image" src="https://github.com/user-attachments/assets/cf2955cd-e567-4c7c-b9e2-2ac16e7f6977" />
+
 
 A real-time, AI-powered dashboard for 911 and suicide hotline operators. RoboCop leverages Google Gemini AI to provide live crisis analysis, actionable alerts, and intelligent suggestions—helping emergency responders save lives with confidence and speed.
 
@@ -9,11 +10,8 @@ A real-time, AI-powered dashboard for 911 and suicide hotline operators. RoboCop
 
 ## 🖥️ Demo
 
-> **Live Demo:** _[Add link if deployed]_
-> **Screenshots:**  
+
 > !<img width="689" alt="image" src="https://github.com/user-attachments/assets/32c8f363-ce7c-4f23-aaa9-a6f26dbfd150" />
-)  
-> ![Dispatch Modal](./screenshot2.png)
 
 ---
 
@@ -84,8 +82,9 @@ npm start             # Starts backend on http://localhost:3000
 
 ## 📸 Screenshots
 
-![Dashboard Main](./screenshot1.png)
-![Dispatch Modal](./screenshot2.png)
+<img width="689" alt="image" src="https://github.com/user-attachments/assets/d59495d6-5fdc-4834-9e13-99e371c8b673" />
+
+
 
 ---
 
