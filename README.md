@@ -45,11 +45,19 @@ A real-time, AI-powered dashboard for 911 and suicide hotline operators. RoboCop
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** HTML5, Tailwind CSS, JavaScript (ES6+), Font Awesome
+- **Frontend:** HTML5, Tailwind CSS, JavaScript (ES6+), Font Awesome, PyQt6
 - **Backend:** Node.js, Express, Socket.io, Axios
 - **AI Integration:** Google Gemini API (NLP, sentiment, risk analysis)
+- **Telephony (Attempted):** Twilio API for real phone call integration (removed due to time constraints, but code and setup guide included)
 - **Security:** Role-based access, .env config, audit logging
 - **Other:** WebSocket real-time updates, simulation engine
+
+---
+
+## ⚡ Integration Notes
+
+- **Twilio Phone Call Integration:**
+    - We initially implemented Twilio integration for real phone call handling, including webhook setup and live call streaming. Due to hackathon time constraints and Twilio trial account limitations, we removed this feature for the final demo. The codebase and setup guide (`TWILIO_SETUP_GUIDE.md`) are included for future extension.
 
 ---
 
@@ -103,7 +111,10 @@ npm start             # Starts backend on http://localhost:3000
 
 ## 👥 Contributors
 
-- [Your Name or Team Name] (add more as needed)
+- Vivek Patel
+- Arul Srivastava
+- Ryan Lin
+- Prithvi Kamalakannan
 
 ---
 
@@ -115,7 +126,7 @@ MIT License
 
 ## 🙏 Acknowledgements
 
-- Built for [your hackathon name]
+- Built for Solution Hacks 2025
 - Powered by [Google Gemini AI](https://ai.google.dev/)
 - Inspired by the dedication of emergency responders worldwide
 
